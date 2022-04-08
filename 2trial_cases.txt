@@ -1,0 +1,41 @@
+(a,b)   (b,c)   (c,d)   (a,d)   (a,c)   (b,d)
+(0,0)   (0,0)   (0,0)   (0,0)   (0,0)   (0,0)
+(0,1)   (0,1)   (0,1)   (0,1)   (0,1)   (0,1)
+(1,1)   (1,1)   (1,1)   (1,1)   (1,1)   (1,1)
+(1,0)   (1,0)   (1,0)   (1,0)   (1,0)   (1,0)
+
+
+
+
+a   b   c   d   |   (a,b)   (b,c)   (c,d)   (a,d)   (a,c)   (b,d)
+0	0	0	0   |   (0,0)   (0,0)   (0,0)   (0,0)   (0,0)   (0,0)
+0	1	0	1   |   (0,1)   (1,0)   (0,1)   (0,1)   (0,0)   (1,1)
+0	0	1	1   |   (0,0)   (0,1)   (1,1)   (0,1)   (0,1)   (0,1)
+1	1	1	0   |   (1,1)   (1,1)   (1,0)   (1,0)   (1,1)   (1,0)
+
+Interactions     |  (1,0)   none    none    (1,0)   (1,0)   none
+not covered      |
+
+coverage ration = 21/24 = 0.875
+
+g = number of factors                                       4
+k = no. of levels in each factors                           2
+t = number of factors taken at once (t-way/t-wise test)     2
+
+for homogenous levels in each factor
+denominator = k^t * gCt
+
+g=4   a b c d
+k=?   2 3 2 4
+t=2
+
+(a,b)   (a,c)                                           for(i in range g)
+
+
+(0,0)
+(0,1)
+(0,2)
+(1,0)
+(1,1)
+(1,2)
+
